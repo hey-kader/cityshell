@@ -7,3 +7,12 @@ while
 int
 char
 bool
+goto
+void
+null
+continue
+extern
+include
+define
+ifndef
+endif

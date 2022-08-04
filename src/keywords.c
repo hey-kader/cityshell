@@ -21,7 +21,7 @@ int keywords (int * w[]) {
       word[i] = '\0'; 
     else {
       word[i] = '\0';
-      w[wc++] = &word;
+      w[wc++] = &word[0];
       i = 0;
       }
     i++;

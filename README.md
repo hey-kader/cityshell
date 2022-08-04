@@ -6,7 +6,10 @@
 > keep on' buildin'!
 
 
-## ```COLOR DEFINITIONS```
+## ```color definitions```
+
+## ```the prompt```
+## ```---->```
 
 
 # ```luajit``` or ```python3```

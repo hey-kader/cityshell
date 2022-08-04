@@ -8,9 +8,7 @@
 
 ## ```color definitions```
 
-## ```      ---->```
 ## ```----> the prompt ---->```
-## ```---->```
 
 
 # ```luajit``` or ```python3```

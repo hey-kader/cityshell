@@ -11,8 +11,12 @@
 ## ```----> the prompt ---->```
 
 ## Build Instructions 
-to build, run ```make```
-i am using ```cc``` for portability,
+to build, run ```make```.
+feel free to modify the makefile,
+i have it configured in such a way where the resulting binary 
+```city``` is linked to ```/tmp/bin/city```, and if this directory
+does not exist, we ```mkdir -p /tmp/bin/city```.
+in terms of a compiiler, in this ```makefile``` i am using ```cc``` for portability,
 and the project was mainly intended to 
 operate in symbiosis with the greater llvm ecosystem
 

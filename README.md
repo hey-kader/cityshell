@@ -1,10 +1,10 @@
 # ```CITYSHELL```
 
-```bash
-  echo 'welcome to the metropolis!'
-  echo 'were so glad you could [make] it
-  echo 'keep on' buildin'!
-```
+>>
+>'welcome to the metropolis!'
+>'were so glad you could [make] it
+>'keep on' buildin'!
+>>
 
 ![](block.png)
 ![](block.png)

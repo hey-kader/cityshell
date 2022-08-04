@@ -10,6 +10,11 @@
 
 ## ```----> the prompt ---->```
 
+## Build Instructions 
+to build, run ```make```
+i am using ```cc``` for portability,
+and the project was mainly intended to 
+operate in symbiosis with the greater llvm ecosystem
 
 # ```luajit``` or ```python3```
 > cityshell was intended to be scripted in lua, but accepts python3

@@ -1,10 +1,10 @@
 # ```CITYSHELL```
 ![](block.png)   
->>```
->welcome to the metropolis!\n
->were so glad you could [make] it.\n
->keep on' buildin'!\n
->>```
+>
+>>welcome to the metropolis!
+>>were so glad you could [make] it.
+>>keep on' buildin'!
+>
 
 ## COLOR DEFINITIONS
 

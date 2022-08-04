@@ -1,7 +1,9 @@
 # ```CITYSHELL```
 
-```sh
-  echo 'welcome to cityshell'
+```bash
+  echo 'welcome to the metropolis!'
+  echo 'were so glad you could [make] it
+  echo 'keep on' buildin'!
 ```
 
 ```c

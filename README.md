@@ -23,7 +23,7 @@
 ![](block.png)
 ![](block.png)
 ![](block.png)
-## ```COLOR DEFINITIONS```
+## ![](block.png) ```COLOR DEFINITIONS```
 
 >
 >> ```keep in mind, while we only use 8 colors,```

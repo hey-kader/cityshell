@@ -20,6 +20,9 @@ in terms of a compiiler, in this ```makefile``` i am using ```cc``` for portabil
 and the project was mainly intended to 
 operate in symbiosis with the greater llvm ecosystem
 > add ```/tmp/bin/``` to your `$PATH` by saying:
+`PATH=$PATH:/tmp/bin/`.
+furthermore, you could add the statement `export PATH=$PATH:/tmp/bin` to your rc-
+> this is configured for debugging purposes and must copy the binary to an alternative directory in your path.
 
 # ```luajit``` or ```python3```
 > cityshell was intended to be scripted in lua, but accepts python3

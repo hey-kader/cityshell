@@ -19,6 +19,7 @@ does not exist, we ```mkdir -p /tmp/bin/city```.
 in terms of a compiiler, in this ```makefile``` i am using ```cc``` for portability,
 and the project was mainly intended to 
 operate in symbiosis with the greater llvm ecosystem
+> add ```/tmp/bin/``` to your `$PATH` by saying:
 
 # ```luajit``` or ```python3```
 > cityshell was intended to be scripted in lua, but accepts python3

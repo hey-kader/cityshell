@@ -7,6 +7,9 @@
 
 
 ## ```COLOR DEFINITIONS```
+
+
+# ```luajit``` or ```python3```
 > cityshell was intended to be scripted in lua, but accepts python3
 
 ## ![](mov.mov)

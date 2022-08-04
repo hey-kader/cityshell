@@ -1,4 +1,4 @@
-# ```CITYSHELL```
+# ![](block.png) ```CITYSHELL```
 
 >>
 >'welcome to the metropolis!'
@@ -6,23 +6,6 @@
 >'keep on' buildin'!
 >>
 
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
 ## ![](block.png) ```COLOR DEFINITIONS```
 
 >

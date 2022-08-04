@@ -7,6 +7,11 @@
 ```
 
 ## ```COLOR DEFINITIONS```
+
+>
+>> ```keep in mind, while we only use 8 colors,```
+>> ```there is nothing preventing us from mixing up the palette!```
+>
 ```c
    
 ```

@@ -6,7 +6,7 @@
 
 ## color definitions
 
-## ---->
+---->
 
 ## build instructions 
 to build, run ```make```.
@@ -28,7 +28,7 @@ furthermore, you could add the statement ```export PATH=$PATH:/tmp/bin``` to you
 >
 
 
-![](imgs/cityshell.png)
+![](.imgs/cityshell.png)
 ```c
    
 ```

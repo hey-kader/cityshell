@@ -6,7 +6,7 @@
 > keep on' buildin'!
 
 
-## COLOR DEFINITIONS
+## ```COLOR DEFINITIONS```
 
 ## ![](mov.mov)
 

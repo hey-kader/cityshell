@@ -1,14 +1,14 @@
-# ```city```
+# city
 > welcome to the metropolis!
 > were so glad you could [make] it.
 > keep on' buildin'!
 
 
-## ```color definitions```
+## color definitions
 
-## ```----> the prompt ---->```
+## ---->
 
-## Build Instructions 
+## build instructions 
 to build, run ```make```.
 feel free to modify the makefile,
 i have it configured in such a way where the resulting binary 
@@ -21,11 +21,6 @@ operate in symbiosis with the greater llvm ecosystem
 ```PATH=$PATH:/tmp/bin/```.
 furthermore, you could add the statement ```export PATH=$PATH:/tmp/bin``` to your rc-
 > this is configured for debugging purposes and must copy the binary to an alternative directory in your path.
-
-# ```luajit``` or ```python3```
-> cityshell was intended to be scripted in lua, but accepts python3
-
-## ![th](mov.gif)
 
 >
 >> ```keep in mind, while we only use 8 colors,

@@ -6,6 +6,7 @@
   echo 'keep on' buildin'!
 ```
 
+[block.png]
 ## ```COLOR DEFINITIONS```
 
 >

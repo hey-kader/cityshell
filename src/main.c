@@ -4,17 +4,30 @@
 #include <ctype.h>
 #include "colors.h"
 #include <stdlib.h>
+#include "keywords.c"
+
 
 #define MAX 500
+#define MAX_KEYWORDS 64 
 
 int _getline (int []);
 void _printline (int *, int);
 void clean (int *line, int len);
 void words (int *, int length);
 
+
+
 int main (int argc, char * argv[]) {
 
   system("clear");
+
+  int * Keywords[MAX];
+  malloc (sizeof (int)*MAX);
+  int kw_count = keywords(Keywords);
+  printf("\n%d\n\n",kw_count);
+  while (--kw_count)
+    printf("%d\t%s", strlen(Keywords[kw_count]), Keywords[kw_count]);
+
   int  line[MAX];
   
   int linecount = 0;
@@ -41,7 +54,7 @@ int main (int argc, char * argv[]) {
       ;
     }
     linecount = _getline(&line[0]);
-    words(&line[0], linecount);
+    words(line, linecount);
 
     if (linecount == 0) {
       printf(BLUE);
@@ -77,7 +90,7 @@ void _printline (int *line,int count) {
 
 void words (int * line, int len) {
 
-  for (int i = 0; i < len; i ++) {
+  for (int i = 0; i < len; i++) {
     if (line[i] != ' ') {
       if (line[i] >='0' && line[i] <= '9')
         printf(YELLOW);

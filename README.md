@@ -28,7 +28,7 @@ furthermore, you could add the statement ```export PATH=$PATH:/tmp/bin``` to you
 >
 
 
-![](cityshell.png)
+![](imgs/cityshell.png)
 ```c
    
 ```

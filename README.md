@@ -8,7 +8,8 @@
 
 ## ```color definitions```
 
-## ```the prompt```
+## ```      ---->```
+## ```----> the prompt ---->```
 ## ```---->```
 
 

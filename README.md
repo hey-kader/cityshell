@@ -34,13 +34,6 @@
 ![](block.png)
 ![](block.png)
 ![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
-![](block.png)
 ## ```COLOR DEFINITIONS```
 
 >

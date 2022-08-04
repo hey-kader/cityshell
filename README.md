@@ -6,6 +6,7 @@
   echo 'keep on' buildin'!
 ```
 
+## ```COLOR DEFINITIONS```
 ```c
-  echo 'cityshell is a cool [colord] shell written in just c
+   
 ```

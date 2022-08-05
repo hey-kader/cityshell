@@ -104,6 +104,7 @@ void words (int * line, int len) {
         printf(BLUE);
       }
       if (line[i] >= 'a' && line[i] <= 'z') {
+        buffer(line[i]);
         word[lc++] = line[i];
         printf(BLUE);
       }
@@ -133,11 +134,11 @@ int _getline (int *line) {
   int c;
   int i = 0;
 
-  while ((c = getc(stdin)) != '\n') {
+  while ((c = getc(stdin)) && c != EOF) {
+    buffer ((char)c);
     if (line[0] == '\\') {
       printf("> ");
     }
-    buffer (c);
     line[i++] = c;
   }
   line[i] = '\0';

@@ -4,7 +4,9 @@
 #include <ctype.h>
 #include "colors.h"
 #include <stdlib.h>
+
 #include "keywords.c"
+#include "log.c"
 
 
 #define MAX 500
@@ -34,13 +36,16 @@ int main (int argc, char * argv[]) {
   
   int linecount = 0;
   printf(YELLOW);
+  //FILE * log = fopen("log", "a");
   for (int i = 0; i < linecount; i++) {
     if (linecount == 0) {
       printf(PURPLE);
       //system("ls");
       //break;
     }
-    printf("%c",line[i]);
+    printf("%c",(char)line[i]);
+    //fputc(log, line[i]);
+  
   }
 
   bool running = true;
@@ -55,7 +60,8 @@ int main (int argc, char * argv[]) {
     linecount = _getline(&line[0]);
     words(line, linecount);
 
-    printf("%s\n",line[linecount]);
+    printf("%s\n",(char *)line);
+    now();
     if (linecount == 0) {
       printf(BLUE);
       printf("----> ");
@@ -89,7 +95,7 @@ void _printline (int *line,int count) {
 
 void words (int * line, int len) {
 
-  char word[MAX];
+  char  word[MAX];
   int lc = 0;
   for (int i = 0; i < len; i++) {
     if (line[i] != ' ') {
@@ -119,7 +125,9 @@ void words (int * line, int len) {
   printf(RED);
   printf("\n");
   word[lc] = '\0';
+  //logfile(word);
   // check for word in kw's
+  
 }
 
 int _getline (int *line) {
@@ -134,5 +142,7 @@ int _getline (int *line) {
     line[i++] = c;
   }
   line[i] = '\0';
+  printf("%d\t",i);
+  //logfile(line);
   return i;
 } 

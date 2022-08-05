@@ -5,10 +5,12 @@ int keywords (int * w[]);
 
 int keywords (int * w[]) {
   FILE * fp = fopen("keywords", "rb");
+
   int c;
   int wc = 0;
   int i = 0;
-  int * word = malloc (sizeof (int));
+
+  int * word = malloc (sizeof (int)*64);
   while ((c = fgetc(fp)) && c != EOF) {
     i++;
     if (c >= 'a' && c <= 'z') {

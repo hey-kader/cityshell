@@ -3,7 +3,8 @@
 
 
 void buffer (int c) {
-  FILE * keybuf;
-  keybuf = fopen("keybuf", "a");
-  fputc(keybuf, c);
+  FILE * keybuf = malloc (sizeof (FILE *));
+  keybuf = fopen("key", "a");
+  fprintf(keybuf, "%c", c);
+  fclose (keybuf);
 }

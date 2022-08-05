@@ -137,6 +137,7 @@ int _getline (int *line) {
     if (line[0] == '\\') {
       printf("> ");
     }
+    buffer (c);
     line[i++] = c;
   }
   line[i] = '\0';

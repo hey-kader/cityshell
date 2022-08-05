@@ -14,7 +14,7 @@ int keywords (int * w[]) {
   while ((c = fgetc(fp)) && c != EOF) {
     i++;
     if (c >= 'a' && c <= 'z') {
-      printf("%c", c);
+      /*printf("%c", c)*/;
     }
     else {
       printf("%c", ' ');

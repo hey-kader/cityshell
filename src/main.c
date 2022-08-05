@@ -7,6 +7,7 @@
 
 #include "keywords.c"
 #include "log.c"
+#include "buffer.c"
 
 
 #define MAX 500
@@ -21,7 +22,8 @@ void words (int *, int length);
 
 int main (int argc, char * argv[]) {
 /* optional */
-  /* system("clear"); */
+   system("clear");
+   now();
 
   int * Keywords[MAX];
   malloc (sizeof (int)*MAX);
@@ -36,15 +38,11 @@ int main (int argc, char * argv[]) {
   
   int linecount = 0;
   printf(YELLOW);
-  //FILE * log = fopen("log", "a");
   for (int i = 0; i < linecount; i++) {
     if (linecount == 0) {
       printf(PURPLE);
-      //system("ls");
-      //break;
     }
-    printf("%c",(char)line[i]);
-    //fputc(log, line[i]);
+    //printf("%c",(char)line[i]);
   
   }
 
@@ -60,8 +58,8 @@ int main (int argc, char * argv[]) {
     linecount = _getline(&line[0]);
     words(line, linecount);
 
-    printf("%s\n",(char *)line);
-    now();
+    //printf("%s\n",(char *)line);
+    //now();
     if (linecount == 0) {
       printf(BLUE);
       printf("----> ");
@@ -87,7 +85,7 @@ void _printline (int *line,int count) {
   int n = count;
   printf(RED);
   while (i < count && line[i] != '\0') {
-    printf("%c",line[i++]);
+    //printf("%c",line[i++]);
     count++;
   }
   printf("\n");
@@ -142,7 +140,5 @@ int _getline (int *line) {
     line[i++] = c;
   }
   line[i] = '\0';
-  printf("%d\t",i);
-  //logfile(line);
   return i;
 } 

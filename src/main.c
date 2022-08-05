@@ -23,7 +23,7 @@ void words (int *, int length);
 int main (int argc, char * argv[]) {
 /* optional */
    system("clear");
-   now();
+   now ();
 
   int * Keywords[MAX];
   malloc (sizeof (int)*MAX);

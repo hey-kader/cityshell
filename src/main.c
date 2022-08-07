@@ -85,7 +85,7 @@ void _printline (int *line,int count) {
   int n = count;
   printf(RED);
   while (i < count && line[i] != '\0') {
-    //printf("%c",line[i++]);
+    printf("%c",line[i++]);
     count++;
   }
   printf("\n");
@@ -117,6 +117,7 @@ void words (int * line, int len) {
       word[lc] = '\0';
       printf(WHITE);
 
+      printf("%s", word[lc]);
     }
 
   }
@@ -124,8 +125,11 @@ void words (int * line, int len) {
   printf(RED);
   printf("\n");
   word[lc] = '\0';
-  //logfile(word);
+  lc = 0;
+
+  
   // check for word in kw's
+  printf("%s\n%s", word[lc], now());
   
 }
 

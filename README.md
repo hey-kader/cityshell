@@ -30,5 +30,12 @@ furthermore, you could add the statement ```export PATH=$PATH:/tmp/bin``` to you
 
 ![](.imgs/cityshell.png)
 ```c
+void main (void)
+  print "welcome to cityshell!"
+
+void cityshell (NULL *);
+
+void cityshell (NULL *ptr
+  print "cityshell function body"
    
 ```

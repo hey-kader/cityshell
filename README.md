@@ -39,3 +39,6 @@ void cityshell (NULL *ptr
   print "cityshell function body"
    
 ```
+
+## as of now, running the city binary will create an buffer.lua file containing the output text
+

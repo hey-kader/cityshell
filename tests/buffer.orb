@@ -1,0 +1,8 @@
+* this is a header
+
+#!lua
+print "hi"
+#/lua
+
+#!lua
+#/lua

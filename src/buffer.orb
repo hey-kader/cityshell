@@ -1,7 +1,6 @@
-
-* this is a header
-
 #!lua
-print "hi"
+function test()
+  print "this is a test"
+end
+test()
 #/lua
-

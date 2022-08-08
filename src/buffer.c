@@ -4,7 +4,7 @@
 
 void buffer (int c) {
   FILE * keybuf = malloc (sizeof (FILE *));
-  keybuf = fopen("buffer.lua", "ab");
+  keybuf = fopen("buffer.orb", "ab");
   fprintf(keybuf, "%c", c);
   fclose (keybuf);
 }

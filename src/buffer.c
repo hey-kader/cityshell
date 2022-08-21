@@ -7,7 +7,7 @@
 void buffer (int c, char * filename) {
   FILE * keybuf = malloc (sizeof (int)*2000);
 	
-	system("cd out");
+	//system("cd out");
 
 	/* 
 	  lets see if the file exists, 
@@ -19,7 +19,15 @@ void buffer (int c, char * filename) {
 
 	//printf("%s\n", filename);
   keybuf = fopen(filename, "ab");
-  fprintf(keybuf, "%c", c);
+  if (keybuf != '\0') {
+    if (keybuf != '\n') {
+     fprintf(keybuf, "%c", c);
+    }
+    printf(RED);
+    //printf("exists!\n\n");
+    //printf(WHITE);
+  }
+  //fprintf(keybuf, "%c", c);
   fclose (keybuf);
 
 }

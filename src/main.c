@@ -8,22 +8,38 @@
 #include "keywords.c"
 #include "log.c"
 #include "buffer.c"
+//#include "name.c"
 
 
 #define MAX 500
 #define MAX_KEYWORDS 64 
 
-int _getline (int []);
+int _getline (int [], char *);
 void _printline (int *, int);
 void clean (int *line, int len);
-void words (int *, int length);
+void words (int *, int length, char * filename);
 
 
 
 int main (int argc, char * argv[]) {
-/* optional */
+  /* optional */
    system("clear");
+   printf(GREEN);
    now ();
+   printf(WHITE);
+  /* not optional */
+	 char * filename;
+	 while (argc--) {
+     printf("%s\t", argv[argc]); 
+     if (argc == 0)
+        printf(RED);
+     else 
+			 filename = argv[argc];
+       printf(YELLOW);
+			 break;
+   }
+  printf("\n"); 
+
 
   int * Keywords[MAX];
   malloc (sizeof (int)*MAX);
@@ -35,17 +51,15 @@ int main (int argc, char * argv[]) {
   printf("\n");
 
   int  line[MAX];
-  
   int linecount = 0;
   printf(YELLOW);
   for (int i = 0; i < linecount; i++) {
     if (linecount == 0) {
       printf(PURPLE);
     }
-    //printf("%c",(char)line[i]);
+    printf("%c",(char)line[i]);
   
   }
-
   bool running = true;
   while (running) {
 
@@ -55,8 +69,8 @@ int main (int argc, char * argv[]) {
     }
     else
       printf(PURPLE);
-    linecount = _getline(&line[0]);
-    words(line, linecount);
+    linecount = _getline(&line[0], filename);
+    words(line, linecount, filename);
 
     //printf("%s\n",(char *)line);
     //now();
@@ -91,7 +105,7 @@ void _printline (int *line,int count) {
   printf("\n");
 }
 
-void words (int * line, int len) {
+void words (int * line, int len, char * filename) {
 
   char  word[MAX];
   int lc = 0;
@@ -104,7 +118,7 @@ void words (int * line, int len) {
         printf(BLUE);
       }
       if (line[i] >= 'a' && line[i] <= 'z') {
-        buffer(line[i]);
+        buffer(line[i], filename);
         word[lc++] = line[i];
         printf(BLUE);
       }
@@ -124,6 +138,7 @@ void words (int * line, int len) {
 
   printf(RED);
   printf("\n");
+  printf("%s\t",word[lc]);
   word[lc] = '\0';
   lc = 0;
 
@@ -133,13 +148,13 @@ void words (int * line, int len) {
   
 }
 
-int _getline (int *line) {
+int _getline (int *line, char * filename) {
 
   int c;
   int i = 0;
 
   while ((c = getc(stdin)) && c != EOF) {
-    buffer ((char)c);
+    buffer ((int)c, filename);
     if (line[0] == '\\') {
       printf("> ");
     }

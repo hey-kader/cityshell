@@ -1,6 +1,0 @@
-#!lua
-function test()
-  print "this is a test"
-end
-test()
-#/lua

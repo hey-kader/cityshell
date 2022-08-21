@@ -7,7 +7,7 @@ make city: main.o
 
 make: city 
 	mkdir -p /tmp/bin
-	ln city /tmp/bin/city	
+	ln city /tmp/bin/city
 
 clean:
 	rm *.o city /tmp/bin/city
